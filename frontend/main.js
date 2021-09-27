@@ -11,3 +11,4 @@ import './assets/css/style.css';
 // login.init();
 // cadastro.init();
 
+const test = 2;
