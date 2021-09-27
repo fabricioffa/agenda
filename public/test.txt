@@ -1,1 +1,0 @@
-mongodb+srv://fabricio5:niteroi5@cursojs01.bfo7q.mongodb.net/cursojs01?retryWrites=true&w=majority
