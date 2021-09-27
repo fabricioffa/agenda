@@ -1,0 +1,46 @@
+<%- include('includes/head'); %>
+  <%- include('includes/nav'); %>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-2"></div>
+
+        <div class="col-lg-8 ">
+          <h1 class="text-center my-3">Wellcome</h1>
+
+           <%- include('includes/messages') %> 
+
+          <div class="row">
+
+            
+            <div class="col-lg my-5">
+              <h4 class="my-3">Login:</h4>
+              
+              <form class="form-login my-5" action="/login/login" method="POST">
+                <input type="hidden" name="_csrf" value=<%= csrfToken %>>
+                <div class="mb-3">
+                  <label>E-mail</label>
+                  <input type="email" class="form-control" name="email">
+                </div>
+                
+                <div class="mb-3">
+                  <label>Password</label>
+                  <input type="password" class="form-control" name="password">
+                </div>
+                
+                <button type="submit" class="btn btn-primary">Login</button>
+              </form>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="col-lg-2"></div>
+
+      </div>
+    </div>
+
+    <%- include('includes/footer'); %>
